@@ -1,0 +1,2 @@
+1. Compare your my_memset to libc memset by disassembling both.
+2. Note differences in loops, unrolling, or instructions.

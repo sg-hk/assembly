@@ -1,0 +1,3 @@
+1. Use the open syscall to create/overwrite output.txt.
+2. Use write syscall to write "Hello, File!".
+3. Close the file.

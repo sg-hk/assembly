@@ -1,0 +1,2 @@
+1. Implement a function my_memset(void* dst, int val, size_t len) in assembly.
+2. Test it from a C driver code.

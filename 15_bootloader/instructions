@@ -1,0 +1,3 @@
+1. Create a 512-byte boot sector (.bin).
+2. Use BIOS interrupt int 0x10 to print "Booting...".
+3. Test with QEMU.

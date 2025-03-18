@@ -1,0 +1,12 @@
+16	Switch to Protected Mode	1. Set up a Global Descriptor Table (GDT).
+2. Set the PE bit in CR0 to switch from real mode to 32-bit protected mode.
+3. Verify with QEMU.	- Intel Manual Vol. 3A
+17	Basic IDT & Interrupt Handling	1. Create a minimal Interrupt Descriptor Table (IDT).
+2. Point IDTR to your IDT.
+3. Write a handler that prints a message on any interrupt.	- OSDev Wiki: Interrupts
+18	Software Interrupt (INT)	1. Trigger an interrupt via int 0x30 (for example).
+2. Confirm your handler prints the message.	N/A
+19	Paging Structures	1. Create page directory & table for first 4MB (identity map).
+2. Enable paging by setting CR3 and CR0.PG.	- OSDev Wiki: Paging
+20	Verify Paging	1. Confirm code still runs at the same physical & virtual addresses.
+2. Print a final message “Paging Enabled!”	N/A
