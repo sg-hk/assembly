@@ -1,0 +1,3 @@
+1. Implement an integer multiply function using repeated addition or shifts.
+2. Store arguments in registers, and store result in another register.
+3. Print result via syscall.

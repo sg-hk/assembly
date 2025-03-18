@@ -1,0 +1,2 @@
+1. Expand your arithmetic code to handle subtraction and negative results (check sign bit).
+2. Print the final signed integer.

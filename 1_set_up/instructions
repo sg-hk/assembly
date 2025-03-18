@@ -1,0 +1,3 @@
+1. Install NASM and LD (or use GCC’s linker).
+2. Create a minimal .asm file that sets up program start (global _start) but does nothing.
+3. Assemble & link to produce an executable.

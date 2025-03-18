@@ -1,0 +1,2 @@
+1. Write a function add_one(int x) in assembly using _start as “main.”
+2. Pass the argument in a register, call add_one, return result in eax, print result.
