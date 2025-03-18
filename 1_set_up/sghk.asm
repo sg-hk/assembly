@@ -1,10 +1,10 @@
-.globl _start    
+.globl _start   ;; define the entry point 
 
 .text           
 _start:
     mov x16, #1 ;; exit syscall (1)
-    mov x0, #0 ;; exit status = exit(0)
-    svc #0x80      
+    mov x0, #0  ;; exit status = exit(0)
+    svc #0x80   ;; execute syscall
 
 ;; compilation commands
 ;; x86 linux
