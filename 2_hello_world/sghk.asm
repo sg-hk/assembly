@@ -15,8 +15,11 @@ _start:
                                 ;; returns upper 52 bits of the 64-bit address
         add x1, x1, msg@PAGEOFF ;; add (destination), (source), (value)
                                 ;; msg@PAGEOFF is the missing 12 bits (the offset)
-        mov x2, #13             ;; 13 is length of msg. x2 is a 64-bit register
-        mov x16, #4             ;; x16 is syscall, #4 is write 
+        mov x2, #13             ;; 13 is length of msg
+                                ;; "x" registers are 64bit ints
+                                ;; "w" 32b int; "d" 64b float; "s" 32b float
+                                ;; 64 and 32 variants occupy same space. 32 is lower half
+        mov x16, #4             ;; write is syscall 4
         svc #0x80
 
         ;; exit syscall
