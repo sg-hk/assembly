@@ -11,4 +11,4 @@ _start:
 ; x86 linux
 ; nasm -f elf64 file.asm -o file.o && ld file.o -o file
 ; macOS
-; clang -c file.ask -o file.o && ld file.o -o file -lSystem -syslibroot `xcrun --show-sdk-path` -e _start
+; clang -c file.asm -o file.o && ld file.o -o file -lSystem -syslibroot `xcrun --show-sdk-path` -e _start
